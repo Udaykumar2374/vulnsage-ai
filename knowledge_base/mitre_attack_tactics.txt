@@ -1,0 +1,55 @@
+ID: TA0043
+Name: Reconnaissance
+Description: The adversary is trying to gather information they can use to plan future operations.
+
+ID: TA0042
+Name: Resource Development
+Description: The adversary is trying to establish resources they can use to support operations.
+
+ID: TA0001
+Name: Initial Access
+Description: The adversary is trying to get into your network.
+
+ID: TA0002
+Name: Execution
+Description: The adversary is trying to run malicious code.
+
+ID: TA0003
+Name: Persistence
+Description: The adversary is trying to maintain their foothold.
+
+ID: TA0004
+Name: Privilege Escalation
+Description: The adversary is trying to gain higher-level permissions.
+
+ID: TA0005
+Name: Defense Evasion
+Description: The adversary is trying to avoid being detected.
+
+ID: TA0006
+Name: Credential Access
+Description: The adversary is trying to steal account names and passwords.
+
+ID: TA0007
+Name: Discovery
+Description: The adversary is trying to figure out your environment.
+
+ID: TA0008
+Name: Lateral Movement
+Description: The adversary is trying to move through your environment.
+
+ID: TA0009
+Name: Collection
+Description: The adversary is trying to gather data of interest to their goal.
+
+ID: TA0011
+Name: Command and Control
+Description: The adversary is trying to communicate with compromised systems to control them.
+
+ID: TA0010
+Name: Exfiltration
+Description: The adversary is trying to steal data.
+
+ID: TA0040
+Name: Impact
+Description: The adversary is trying to manipulate, interrupt, or destroy your systems and data.

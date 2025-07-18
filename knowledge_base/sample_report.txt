@@ -1,0 +1,26 @@
+Sample Bug Bounty Report
+
+Title: Stored XSS in Comment Section
+
+Summary:
+An attacker can inject malicious JavaScript in the blog comment section. The script executes when other users visit the post.
+
+Steps to Reproduce:
+1. Log in as a normal user.
+2. Go to any blog post and leave a comment with the payload:
+   <script>alert("XSS")</script>
+3. View the comment as another user — the alert triggers.
+
+Impact:
+- Stored XSS can lead to session hijacking, CSRF, phishing, and data exfiltration.
+- Users can be attacked without interaction.
+
+Affected Endpoint:
+POST /blog/{id}/comment
+
+Suggested Fix:
+- Sanitize HTML input.
+- Use a JavaScript escaping library.
+- Implement Content Security Policy (CSP).
+
+Severity: High

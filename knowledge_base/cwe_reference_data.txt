@@ -1,0 +1,30 @@
+CWE-79: Improper Neutralization of Input During Web Page Generation (XSS)
+Occurs when data from an untrusted source is output to a web page without proper sanitization or encoding.
+Example: `<script>alert('XSS')</script>`
+Mitigation: Escape HTML entities; use CSP headers; validate user input.
+
+---
+
+CWE-284: Improper Access Control
+Occurs when an application does not properly restrict access to resources.
+Example: Changing user ID in URL gives access to another user's data.
+Mitigation: Use role-based access control and token validation.
+
+---
+
+CWE-352: Cross-Site Request Forgery (CSRF)
+Occurs when a malicious site causes a user’s browser to perform actions on a different site where they are authenticated.
+Mitigation: Use CSRF tokens and SameSite cookies.
+
+---
+
+CWE-94: Code Injection
+Occurs when an attacker can inject and execute arbitrary code in the application.
+Example: `eval(user_input)` without sanitization.
+Mitigation: Avoid `eval()`, use static analysis tools, sanitize inputs.
+
+---
+
+CWE-200: Exposure of Sensitive Information to Unauthorized Actor
+Occurs when applications leak PII, API keys, or internal paths via logs, errors, or responses.
+Mitigation: Mask sensitive data, restrict logs, and avoid debug outputs in production.

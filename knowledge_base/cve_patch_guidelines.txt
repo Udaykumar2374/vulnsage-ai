@@ -1,0 +1,32 @@
+CVE-2025-0133
+Vulnerability: Reflected XSS in Palo Alto GlobalProtect
+Description: Malicious JS could be executed via crafted links. Affects authenticated captive portal users.
+Fix: Apply PAN-OS patch as per PAN-SA-2025-0005; disable Clientless VPN where possible.
+
+---
+
+CVE-2021-26084
+Vulnerability: OGNL Injection in Confluence Server
+Description: Allows unauthenticated RCE via injection in vulnerable versions.
+Fix: Upgrade Confluence Server to 7.13.0+ or apply Atlassian’s security advisory patch.
+
+---
+
+CVE-2020-11022
+Vulnerability: jQuery DOM XSS
+Description: Executing untrusted code via `.html()` and `.append()` functions.
+Fix: Upgrade to jQuery 3.5.0 or sanitize all user-controlled HTML before DOM insertion.
+
+---
+
+CVE-2024-34351
+Vulnerability: SSRF in Next.js
+Description: Improper redirect handling allowed SSRF via modified `Host` headers.
+Fix: Upgrade to Next.js `14.1.1` and validate redirect targets.
+
+---
+
+CVE-2022-29548
+Vulnerability: Reflected XSS in WSO2 Management Console
+Description: Unsanitized input in console leads to script injection.
+Fix: Upgrade to the latest WSO2 product versions with patched consoles.

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VulnSage Assistant</title>
+</head>
+<body>
+    <h1>Ask a Security Question</h1>
+    <form method="post">
+        <textarea name="query" rows="4" cols="80" placeholder="Ask your question here..."></textarea><br><br>
+        <button type="submit">Ask</button>
+    </form>
+
+    {% if answer %}
+        <h2>📌 Answer:</h2>
+        <p>{{ answer }}</p>
+
+        <h3>📚 Sources:</h3>
+        <ul>
+            {% for src in sources %}
+                <li>{{ src }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>

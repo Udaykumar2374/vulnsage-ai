@@ -1,0 +1,32 @@
+Title: Reflected XSS in Client Notes
+Program: MainWP
+Summary: A reflected Cross-Site Scripting (XSS) vulnerability was discovered in the "Notes" input field under Edit Client section. Input wasn't sanitized properly, allowing JS payloads to be reflected back in the HTML response.
+Tags: Reflected XSS, Client-Side
+
+---
+
+Title: Improper Access via Deleted Account Token
+Program: HackerOne
+Summary: A banned user could still access their account using an old API key, allowing access to reports and earnings. This demonstrated improper session revocation.
+Tags: Access Control, Session Management
+
+---
+
+Title: Path Traversal via Windows Device Names
+Program: Node.js
+Summary: `path.normalize()` failed to filter Windows device names (e.g. CON, PRN), allowing bypass of path traversal protection.
+Tags: Path Traversal, Input Validation
+
+---
+
+Title: Race Condition in Organization Creation
+Program: WakaTime
+Summary: A race condition allowed multiple orgs with the same name to be created simultaneously. While not an exploitable vuln, it revealed weak concurrency control.
+Tags: Race Condition, Business Logic
+
+---
+
+Title: Leaked IP in Email Headers
+Program: Weblate
+Summary: User IP addresses were being exposed in outbound email headers, creating a privacy risk. Recommendation was to proxy or mask IPs.
+Tags: Privacy Violation, Information Disclosure

@@ -1,0 +1,31 @@
+OWASP Top 10 - 2021
+
+1. A01:2021 - Broken Access Control  
+Broken access control is now the top risk. 94% of apps had some form of it. This category includes issues like insecure direct object references (IDOR).
+
+2. A02:2021 - Cryptographic Failures  
+Previously "Sensitive Data Exposure". Focus is now on failing to protect data using proper cryptography.
+
+3. A03:2021 - Injection  
+Includes SQL, NoSQL, OS, and LDAP injection. Cross-Site Scripting (XSS) is now part of this category.
+
+4. A04:2021 - Insecure Design  
+New in 2021. Covers design flaws, insecure patterns, and lack of threat modeling.
+
+5. A05:2021 - Security Misconfiguration  
+90% of applications tested had misconfigurations. Now includes XML External Entities (XXE) issues.
+
+6. A06:2021 - Vulnerable and Outdated Components  
+Was "Using Components with Known Vulnerabilities". Focuses on dependency and library risks.
+
+7. A07:2021 - Identification and Authentication Failures  
+Previously "Broken Authentication". Now includes issues with session management and identity flaws.
+
+8. A08:2021 - Software and Data Integrity Failures  
+New category. Covers assumptions about software updates, CI/CD, and unsigned components.
+
+9. A09:2021 - Security Logging and Monitoring Failures  
+Previously "Insufficient Logging & Monitoring". Now broader, covering incident detection failures.
+
+10. A10:2021 - Server-Side Request Forgery (SSRF)  
+New entry. Highlighted by the community. SSRF issues can allow attackers to make internal requests from a vulnerable server.

