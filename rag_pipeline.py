@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 
 from langchain_community.document_loaders import TextLoader
 from langchain.text_splitter import CharacterTextSplitter
-from langchain_huggingface import HuggingFaceEmbeddings  # ✅ updated import
+from langchain_huggingface import HuggingFaceEmbeddings  
 from langchain_community.vectorstores import FAISS
 from langchain_openai import ChatOpenAI
 from langchain.chains import RetrievalQA
