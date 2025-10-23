@@ -29,8 +29,6 @@ VulnSage is an autonomous AI assistant that helps security teams efficiently **t
 
 ---
 
-## 📦 How to Run
-
 ### 1️⃣ Clone the Repo
 
 ```bash
